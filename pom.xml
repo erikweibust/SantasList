@@ -43,6 +43,13 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 				
+                <!-- Jackson JSON Mapper -->
+                <dependency>
+                        <groupId>org.codehaus.jackson</groupId>
+                        <artifactId>jackson-mapper-asl</artifactId>
+                        <version>1.9.0</version>
+                </dependency>
+                				
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>

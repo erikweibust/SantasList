@@ -10,6 +10,8 @@ public class Toy {
 	
 	private long onhand;
 
+	public Toy() {}
+	
 	public Toy(long id, String name, String description, long onhand) {
 		this.id = id;
 		this.name = name;

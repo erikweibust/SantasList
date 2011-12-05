@@ -36,6 +36,11 @@ public class JdbcToyRepository implements ToyRepository {
 	public void updateOnHand(long id, long onhand) {
 		jdbcTemplate.update("UPDATE toy SET onhand=? HWERE id=?", onhand, id);
 	}
+	
+	@Override
+	public void updateToy(Toy toy) {
+		jdbcTemplate.update("UPDATE toy SET name=?, description=?, onhand=? WHERE id=?", toy.getName(), toy.getDescription(), toy.getOnhand(), toy.getId());
+	}
 
 	public void deleteToy(long id) {
 		jdbcTemplate.update("DELETE FROM toy WHERE id=?", id);

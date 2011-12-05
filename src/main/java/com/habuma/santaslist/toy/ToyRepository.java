@@ -14,4 +14,6 @@ public interface ToyRepository {
 	
 	void deleteToy(long id);
 
+	void updateToy(Toy toy);
+
 }
